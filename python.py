@@ -390,5 +390,67 @@
 #     seguir = input("Quiere volver a jugar (s/n) ")
 #     if seguir == "n":
 #         jugando = False
-####################
-###
+#######################
+# import time
+
+# inicio = time.time()
+
+# while True:
+    
+#     print("Estamos jugando ...")
+    
+#     final = time.time()
+    
+#     if final - inicio >= 5:
+#         break
+# print("Fin del juego")
+# print("tiempo de juego:", final - inicio)
+#######################
+import time
+import random
+
+print("******** CONCURSO MATEMÁTICO ********")
+print("")
+print("Haz todas las operaciones que puedas. Tienes 10 segundos de tiempo.")
+print("")
+print("*************************************")
+input("Pulse enter para iniciar: ")
+
+inicio = time.time()
+Tiempo = True
+puntos = 0
+while Tiempo:
+    final = time.time()
+    if final - inicio >= 10:
+        break
+    var1 = random.randint(1,10)
+    var2 = random.randint(1,10)
+    ope = random.choice(["+","-","/","*"])
+    if ope == "+":
+        respuesta = int(input("La cuenta es" + " " + str(var1) + " + " + str(var2) + ":"))
+        if respuesta == var1 + var2:
+            puntos += 1
+            print("Correcto, tienes", puntos, "puntos...")
+        else:
+            print("Incorrecto, tienes", puntos, "puntos")
+    elif ope == "-":
+        respuesta = int(input("La cuenta es" + " " + str(var1) + " - " + str(var2) + ":"))
+        if respuesta == var1 - var2:
+            puntos += 1
+            print("Correcto, tienes", puntos, "puntos...")
+        else:
+            print("Incorrecto, tienes", puntos, "puntos")
+    elif ope == "/":
+        respuesta = int(input("La cuenta es" + " " + str(var1) + " / " + str(var2) + ":"))
+        if respuesta == var1 / var2:
+            puntos += 1
+            print("Correcto, tienes", puntos, "puntos...")
+        else:
+            print("Incorrecto, tienes", puntos, "puntos")
+    else:
+        respuesta = int(input("La cuenta es" + " " + str(var1) + " * " + str(var2) + ":"))
+        if respuesta == var1 * var2:
+            puntos += 1
+            print("Correcto, tienes", puntos, "puntos...")
+        else:
+            print("Incorrecto, tienes", puntos, "puntos")
