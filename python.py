@@ -456,17 +456,81 @@
 #         else:
 #             print("Incorrecto, tienes", puntos, "puntos")
 ##############################################
-import time
+# import time
 
 
-print("Comienzo del programa.")
+# print("Comienzo del programa.")
 
 
-inicio = time.time()
+# inicio = time.time()
 
-time.sleep(.5)
+# time.sleep(.5)
 
-final = time.time()
+# final = time.time()
 
-print("Tiempo del programa.", final-inicio)
+# print("Tiempo del programa.", final-inicio)
+##############################################
+# from calendar import c
+# import time
+
+# input("Presione 'Enter' para comenzar")
+# tiempoI = time.time()
+# c = True
+# tiempoF = time.time()
+# s = 10
+# for s in range(10,0,-0.5):
+#     if tiempoF - tiempoI >= 10:
+#         break
+#     print(s)
+#     time.sleep(.5)
+#     tiempoF = time.time() 
+##############################################
+# import time
+
+# inicio = time.time()
+
+# for i in range(21):
+#     print((20-i)/2)
+#     time.sleep(.5)
+    
+# final = time.time()
+
+# print("Tiempo:", final - inicio - 0.5)
+##############################################
+
+# import time
+
+# ini = time.perf_counter()
+# # for i in range (1,1000000,1):
+# #     print(i)
+# cont = 0
+# while cont != 1000000:
+#     cont += 1
+#     print(cont)
+# fini = time.perf_counter()
+# print("El tiempo de ejercucion de este for fue de: ", fini-ini)
+##############################################
+# import time
+# from tkinter import N
+# inicio = time.perf_counter()
+
+# suma = 0
+
+# for i in range(1, 1_100_001):
+#     suma += i
+# final = time.perf_counter()
+
+# print("La suma es:", suma, "El tiempo de ejecucion para el bucle 'for' fue", final-inicio)
+
+# inicio = time.perf_counter()
+
+# suma = 0
+# n = 1
+
+# while n < 1_000_001:
+#     suma += n
+#     n += 1
+    
+# final = time.perf_counter()
+# print("La suma es:", suma, "El tiempo de ejecucion para el bucle 'While' fue", final-inicio)
 ##############################################
