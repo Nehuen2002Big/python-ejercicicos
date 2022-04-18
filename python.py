@@ -534,3 +534,34 @@
 # final = time.perf_counter()
 # print("La suma es:", suma, "El tiempo de ejecucion para el bucle 'While' fue", final-inicio)
 ##############################################
+# from random import sample, shuffle
+# import time
+
+# colores = ['rojo','azul','verde','amarillo','negro','blanco','beige','cafe','chocolate','violeta']
+# puntos = 0
+# while True:
+#     print("MEMORIZA LOS COLORES... EL JUEGO")
+#     print("... Preparado ...")
+#     sampleados=sample(colores, 4)
+#     print(sampleados)
+#     time.sleep(3)
+#     t = 0
+#     for k in range(15):
+#         t += 1
+#         for i in range(t):
+#             print("#")
+#     primero = input("Primero: ")
+#     segundo = input("Segundo: ")
+#     tercero = input("Tercero: ")
+#     cuarto = input("Cuarto: ")
+#     if sampleados[0] == primero and sampleados[1] == segundo and sampleados[2] == tercero and sampleados[3] == cuarto:
+#         puntos += 1
+#         print("has acertado tienes: ", puntos)
+#     else:
+#         print("Te has equivocado")
+#         continuar = input("Quieres continuar?.. s/n")
+#         if continuar == "n" or continuar =="N":
+#             break
+#         else:
+#             print("Perfecto, comencemos nuevamente")
+##############################################
