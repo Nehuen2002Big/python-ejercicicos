@@ -565,3 +565,96 @@
 #         else:
 #             print("Perfecto, comencemos nuevamente")
 ##############################################
+
+# cadena = "Artefacto"
+
+# cadenaMayus = cadena.upper()
+
+# print(cadenaMayus)
+
+# otraCadena = "ARTILUGIO"
+
+# otraCadenaMin = otraCadena.lower()
+
+# nombre = nombre.capitalize() 
+
+# nombre = nombre.title()
+
+# print(otraCadenaMin)
+
+# nombre = input("Hola, ¿Quién eres? ")
+
+# nombreMayus = nombre.upper()
+#print("Hola", nombre.title())
+# respuesta = input("¿Seguro que eres "+nombreMayus+"?")
+# if respuesta.lower() == "s":
+#     print("Vale")
+# else:
+#     print("NonVale")
+##############################################
+
+# cadena = """Estaba allí. Era un pájaro en la ventana. Pero entonces,
+# de repente, se echó a volar."""
+
+# cadenasplit = cadena.split()
+
+# for i in cadenasplit:
+#     pala = i.strip(".")
+#     print(pala.strip(","))
+    
+# for p in cadenasplit:
+#     if "," in p:
+#         n = p.strip(",")
+#     elif "." in p:
+#         n = p.strip(".")
+#     else:
+#         n = p
+#     print(n)
+##############################################
+
+# cadena = "Hola {} {}.".format("Jose","Garcia")
+# print(cadena)
+
+# saludo = "Hola {} {}." "Encantando de conocerle."
+# print(saludo.format("Jose","Fernandez"))
+# while True:
+    # l = input("Quien envia la carta? ")
+    # print("MODELO DE CARTA")
+    # print("Introduzca los datos de la persona:")
+    # t = input("Tratamiento (Sr/Sra) : ")
+    # n = input("Nombre: ")
+    # a = input("Apellido: ")
+    # print("")
+    # print("")
+    # # Mensaje = "{}. {} {}:"
+    # # MensajeForm = (Mensaje.format(t,n,a))
+    # # print(MensajeForm.title())
+    # # print("Le escribo para informe")
+    # # print("de que ha sido usted invitado")
+    # # print("a la fiesta de la Empresa")
+    # # print("Atentamente")
+    # #############
+    # print("{}. {} {}:".format(t.title(),n.title(),a.title()))
+    # print("Le escribo para informarle")
+    # if t.lower() == "sr":
+    #     print("de que ha sido usted invitado")
+    # elif t.lower() == "sra":
+    #     print("de que ha sido usted invitada")
+    # print("a la fiesta de la Empresa.")
+    # print("Atentamente. {}.".format(l.title()))
+    # print()   
+    # respuesta = input("Desea imprimir otra carta (s/n): ")
+    # if respuesta.lower() == "n":
+    #     break
+##############################################
+print()
+print("PRESUPUESTO".center(50))
+print()
+
+compras = [["Tornillos",723,23.2],
+           ["Tuercas",324,4.5],
+           ["Arandelas",25,35],
+           ["Puntas",1431,2.15]]
+
+for c in compras:
+    print("{0:12}: {1:8d} * {2:8.2f} = {3:12.2f}".format(c[0], c[1], c[2], c[1]*c[2]))
