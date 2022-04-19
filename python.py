@@ -617,23 +617,44 @@
 
 # saludo = "Hola {} {}." "Encantando de conocerle."
 # print(saludo.format("Jose","Fernandez"))
-while True:
-    print("MODELO DE CARTA")
-    print("Introduzca los datos de la persona:")
-    t = input("Tratamiento (Sr/Sra) : ")
-    n = input("Nombre: ")
-    a = input("Apellido: ")
+# while True:
+    # l = input("Quien envia la carta? ")
+    # print("MODELO DE CARTA")
+    # print("Introduzca los datos de la persona:")
+    # t = input("Tratamiento (Sr/Sra) : ")
+    # n = input("Nombre: ")
+    # a = input("Apellido: ")
+    # print("")
+    # print("")
+    # # Mensaje = "{}. {} {}:"
+    # # MensajeForm = (Mensaje.format(t,n,a))
+    # # print(MensajeForm.title())
+    # # print("Le escribo para informe")
+    # # print("de que ha sido usted invitado")
+    # # print("a la fiesta de la Empresa")
+    # # print("Atentamente")
+    # #############
+    # print("{}. {} {}:".format(t.title(),n.title(),a.title()))
+    # print("Le escribo para informarle")
+    # if t.lower() == "sr":
+    #     print("de que ha sido usted invitado")
+    # elif t.lower() == "sra":
+    #     print("de que ha sido usted invitada")
+    # print("a la fiesta de la Empresa.")
+    # print("Atentamente. {}.".format(l.title()))
+    # print()   
+    # respuesta = input("Desea imprimir otra carta (s/n): ")
+    # if respuesta.lower() == "n":
+    #     break
+##############################################
+print()
+print("PRESUPUESTO".center(50))
+print()
 
+compras = [["Tornillos",723,23.2],
+           ["Tuercas",324,4.5],
+           ["Arandelas",25,35],
+           ["Puntas",1431,2.15]]
 
-    Mensaje = "{}. {} {}:"
-    MensajeForm = (Mensaje.format(t,n,a))
-    Mensaje = MensajeForm.title()
-    print(Mensaje)
-    print("Le escribo para informe")
-    print("de que ha sido usted invitado")
-    print("a la fiesta de la Empresa")
-    print("Atentamente")
-    
-    respuesta = input("Desea imprimir otra carta (s/n): ")
-    if respuesta.lower() == "n":
-        break
+for c in compras:
+    print("{0:12}: {1:8d} * {2:8.2f} = {3:12.2f}".format(c[0], c[1], c[2], c[1]*c[2]))
