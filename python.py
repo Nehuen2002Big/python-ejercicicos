@@ -565,3 +565,75 @@
 #         else:
 #             print("Perfecto, comencemos nuevamente")
 ##############################################
+
+# cadena = "Artefacto"
+
+# cadenaMayus = cadena.upper()
+
+# print(cadenaMayus)
+
+# otraCadena = "ARTILUGIO"
+
+# otraCadenaMin = otraCadena.lower()
+
+# nombre = nombre.capitalize() 
+
+# nombre = nombre.title()
+
+# print(otraCadenaMin)
+
+# nombre = input("Hola, ¿Quién eres? ")
+
+# nombreMayus = nombre.upper()
+#print("Hola", nombre.title())
+# respuesta = input("¿Seguro que eres "+nombreMayus+"?")
+# if respuesta.lower() == "s":
+#     print("Vale")
+# else:
+#     print("NonVale")
+##############################################
+
+# cadena = """Estaba allí. Era un pájaro en la ventana. Pero entonces,
+# de repente, se echó a volar."""
+
+# cadenasplit = cadena.split()
+
+# for i in cadenasplit:
+#     pala = i.strip(".")
+#     print(pala.strip(","))
+    
+# for p in cadenasplit:
+#     if "," in p:
+#         n = p.strip(",")
+#     elif "." in p:
+#         n = p.strip(".")
+#     else:
+#         n = p
+#     print(n)
+##############################################
+
+# cadena = "Hola {} {}.".format("Jose","Garcia")
+# print(cadena)
+
+# saludo = "Hola {} {}." "Encantando de conocerle."
+# print(saludo.format("Jose","Fernandez"))
+while True:
+    print("MODELO DE CARTA")
+    print("Introduzca los datos de la persona:")
+    t = input("Tratamiento (Sr/Sra) : ")
+    n = input("Nombre: ")
+    a = input("Apellido: ")
+
+
+    Mensaje = "{}. {} {}:"
+    MensajeForm = (Mensaje.format(t,n,a))
+    Mensaje = MensajeForm.title()
+    print(Mensaje)
+    print("Le escribo para informe")
+    print("de que ha sido usted invitado")
+    print("a la fiesta de la Empresa")
+    print("Atentamente")
+    
+    respuesta = input("Desea imprimir otra carta (s/n): ")
+    if respuesta.lower() == "n":
+        break
