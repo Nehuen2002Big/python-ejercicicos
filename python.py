@@ -647,14 +647,52 @@
     # if respuesta.lower() == "n":
     #     break
 ##############################################
-print()
-print("PRESUPUESTO".center(50))
-print()
+# print()
+# print("PRESUPUESTO".center(50))
+# print()
 
-compras = [["Tornillos",723,23.2],
-           ["Tuercas",324,4.5],
-           ["Arandelas",25,35],
-           ["Puntas",1431,2.15]]
+# compras = [["Tornillos",723,23.2],
+#            ["Tuercas",324,4.5],
+#            ["Arandelas",25,35],
+#            ["Puntas",1431,2.15]]
 
-for c in compras:
-    print("{0:12}: {1:8d} * {2:8.2f} = {3:12.2f}".format(c[0], c[1], c[2], c[1]*c[2]))
+# for c in compras:
+#     print("{0:12}: {1:8d} * {2:8.2f} = {3:12.2f}".format(c[0], c[1], c[2], c[1]*c[2]))
+##############################################
+# n = [1,2,3,4] 
+
+# print(id(n))
+
+# n += [5]
+# # print(id(n))
+# numeros = [1,2,3,4,5]
+
+# numeros.append(6)
+
+# numeros.append([9,10])
+# print(numeros)
+
+
+# lista=[]
+
+# for n in range(100):
+#     lista.append(n+1)
+# print(lista)
+
+# lista = []
+
+# for n in range(100):
+#     lista += [n+1]
+# print("..",lista)
+
+# listaPar = []
+# listaImpar = []
+# numeros = [2,3,5,8,9,12,21,24,25,28]
+# for n in numeros:
+#     if n % 2 == 0:
+#         listaPar.append(n)
+#     else:
+#         listaImpar.append(n)
+# print("Los numeros pares son", listaPar)
+# print("Y los numeros impares son",listaImpar)
+##############################################
