@@ -696,3 +696,51 @@
 # print("Los numeros pares son", listaPar)
 # print("Y los numeros impares son",listaImpar)
 ##############################################
+# productos = []
+# while True:
+#     producto = input("Dime un producto ('s' para salir) : ")
+#     if producto.lower() == "s":
+#         print("Compras terminadas")
+#         break
+#     productos.append(producto)
+# print("La lista de productos es: ")
+# for i in productos:
+#     print(i)
+##############################################
+# lista_compra = ["pan","leche","fruta"]
+
+# mas_compra = ["sal","azucar"]
+
+# lista_compra.extend(mas_compra)
+
+# print(lista_compra)
+
+# n = [1,2,3]
+# m = [4,5]
+
+# n.extend(m)
+
+# print(n)
+
+# t = [1,2,3,4]
+# j = [5]
+
+# t.extend(j)
+# print(t)
+##############################################
+# n = [1,2,3,5]
+# m = 4
+# n.insert(3,m)
+# print(n)
+
+m = 1
+n = [2,3]
+s = [4]
+t = 5
+
+lista = []
+lista.append(m)
+lista.extend(n)
+lista.insert(3,s[0])
+lista.append(t)
+print(lista)
